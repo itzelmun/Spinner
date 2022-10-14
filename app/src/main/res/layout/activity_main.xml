@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txt_NumeroUno"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:hint="Dame el primer valor"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:text="Calculadora"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="129dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="209dp" />
+
+    <EditText
+        android:id="@+id/txt_NumeroDos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:hint="Dame el segundo numero"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_NumeroUno" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="296dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_NumeroDos" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="374dp" />
+
+    <Button
+        android:id="@+id/btn_Calcular"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:text="Calcular"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="467dp" />
+
+    <TextView
+        android:id="@+id/txt_Promedio"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:hint="Resultado"
+        android:text="Resultado:"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Calcular" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="537dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
